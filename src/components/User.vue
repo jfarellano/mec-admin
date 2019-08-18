@@ -28,7 +28,7 @@ export default {
 	},
 	methods: {
 		edit(){
-			api.section.edit(this.user, this.user.id).then(() => {
+			api.user.edit(this.user, this.user.id).then(() => {
 				this.$router.push('/dashboard')
 			}).catch(()=>{
 				alert('Hubo un error editando el sectiono, porfavor revise su conección a internet si esta conectado llame a soporte')
