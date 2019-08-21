@@ -1,5 +1,5 @@
 const r = require('axios');
-const SERVER_URL = 'http://mec-api.jfarellano.xyz/'
+const SERVER_URL = 'https://api.mec.com.co/'
 
 function getHeaders() {
   return {headers: {"Authorization": 'Token token=' + localStorage.getItem('secret')}}
